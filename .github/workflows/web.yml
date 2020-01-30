@@ -1,0 +1,19 @@
+name: 
+on: [push]
+
+jobs:
+  deploy:
+    name: Compile
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions-hub/gcloud@master
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+        node-version: '13.x'
+      - name: Install EJS Compiler
+        run: npm install -g ejs-cli
+      - name: Compile Development Version
+        run: sh devel.sh

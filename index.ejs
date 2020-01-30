@@ -1,11 +1,39 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <% include materialheadcdn.ejs %>      
+         <%# include materialheadcdn.ejs %>
         <% include includes/metatags.ejs %>   
-        <% include includes/bootstrap-hydrogen.ejs %>
+		<% include includes/bootstrap-hydrogen.ejs %>
+		<title>Eva | Tutoring on Demand | Online Therapy & Counseling Online</title>
+		<meta name="Description" content="Eva: Online Tutoring and Therapy App, Edu App.">
                 <!-- main css -->
                 <link rel="stylesheet" href="/css/style.css">
-                <link rel="stylesheet" href="/css/responsive.css">
+				<link rel="stylesheet" href="/css/responsive.css">
+				<link rel="stylesheet" href="/css/stark.css">
+				<style>
+				#planner-photo-1 {
+					max-width: 100%;
+				}
+
+        #plannertext{ padding:16px 16px;}
+
+				@media screen and (min-width:767px) {
+        #plannertext{ padding:50px 50px;}
+    }
+
+    @media screen and (min-width:1024px) {
+        #plannertext{ padding:64px 64px;}
+
+		#major-planner {
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+    }
+
+				</style>
+		 
+		<!--Drift Chat Plugin-->
+		<%# include includes/drift-insert.ejs %>
     </head>
     <body data-spy="scroll" data-target="#mainNav" data-offset="70">
         
@@ -16,13 +44,26 @@
         <!--================Home Banner Area =================-->
 		<% include includes/index-parts/home-banner.ejs %>
         <!--================End Home Banner Area =================-->
+
+		<section style="background: linear-gradient(129.07deg, #B7D0F7 2.3%, #D7D6F4 85.27%, #FFFFFF 130.69%);" id='major-planner'>
+		<div class='row'>
+		<div class='col-sm-12 col-md-7 col-lg-7' id='plannertext'>
+		<h1 style="color: #343F88;text-align: center;">Eva Planner</h1>
+		<p style="color: #343F88;">Eva Planner is the best planner on the market and comes free with all of our plans. With Eva Planner you can arrange meetings with tutors or therapists witht the click of a button. Eva Planner can be used to organize all aspects of your life to help your mental health and stress.<br><br>
+		It syncs with school schedules, gradebooks, and teacher portals such as Canvas and Google Classroom, along with hundreds of intergrations.<br>
+		<br>Stay Woke.
+		</p>
+		</div>
+		<div class='col-sm-12 col-md-5 col-lg-5'><img src='/img/app/planner-1-min.png' id='planner-photo-1' class="tilt-in-top-1 lazy" style="padding: 20px;"></div>
+		</div>
+</section>
         
         <!--================Feature Area =================-->
         <% include includes/index-parts/feature-area.ejs %>
         <!--================End Feature Area =================-->
         
         <!--================Interior Area =================-->
-        <section class="interior_area">
+        <!--<section class="interior_area">
         	<div class="container">
         		<div class="interior_inner row">
         			<div class="col-lg-6">
@@ -37,11 +78,11 @@
         			</div>
         		</div>
         	</div>
-        </section>
+        </section>-->
         <!--================End Interior Area =================-->
         
         <!--================Interior Area =================-->
-        <section class="interior_area interior_two">
+        <!--<section class="interior_area interior_two">
         	<div class="container">
         		<div class="interior_inner row">
         			<div class="col-lg-5 offset-lg-1">
@@ -55,22 +96,18 @@
         				<img class="img-fluid" src="/img/interior-2.png" alt="">
         			</div>
         		</div>
-        		<div class="video_area" id="video">
-        			<img class="img-fluid" src="/img/video-1.png" alt="">
+        		<div class="video_area" id="video">-->
+        			<!--<img class="img-fluid" src="/img/video-1.png" alt="">
         			<a class="popup-youtube" href="https://www.youtube.com/watch?v=VufDd-QL1c0">
         				<img src="/img/icon/video-icon-1.png" alt="">
-        			</a>
+        			</a>-->
         		</div>
         	</div>
         </section>
         <!--================End Interior Area =================-->
         
-        <!--================Price Area =================-->
-        <% include includes/index-parts/price-section.ejs %>
-        <!--================End Price Area =================-->
-        
         <!--================Feature Area =================-->
-        <section class="screenshot_area p_120" id="screen">
+        <!--<section class="screenshot_area p_120" id="screen">
         	<div class="container">
         		<div class="main_title">
         			<h2>Unique Screenshots</h2>
@@ -91,11 +128,11 @@
         			</div>
         		</div>
         	</div>
-        </section>
+        </section>-->
         <!--================End Feature Area =================-->
         
         <!--================Testimonials Area =================-->
-        <section class="testimonials_area p_120">
+        <!--<section class="testimonials_area p_120">
         	<div class="container">
         		<div class="main_title">
         			<h2>Testimonials</h2>
@@ -132,61 +169,21 @@
         			</div>
         		</div>
         	</div>
-        </section>
+        </section>-->
         <!--================End Testimonials Area =================-->
         
-        <!--================Download App Area =================-->
+       
+        
+		<!--================Latest News Area =================-->
+		<!--================End Latest News Area =================-->
+		
+		<!--JOE MAMA IS ABOUT--><br>
+		<% include includes/index-parts/about-us.ejs %>
+		<!--joe mama eva is about-->
+		
+		 <!--================Download App Area =================-->
         <% include includes/index-parts/download-app-section.ejs %>
         <!--================End Download App Area =================-->
-        
-        <!--================Latest News Area =================-->
-        <section class="latest_news_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Latest News</h2>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.</p>
-        		</div>
-        		<div class="latest_news_inner row">
-        			<div class="col-lg-4">
-        				<div class="l_news_item">
-        					<a class="date" href="#">10 April, 2018</a>
-        					<a href="#"><h4>Benjamin Franklin Method Of Habit Formation</h4></a>
-        					<p>There are many kinds of narratives and organizing principles. Science is driven by evidence gathered in experiments, and by the falsification of extant theories and their </p>
-        					<div class="post_view">
-        						<a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 4.5k Views</a>
-        						<a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> 07</a>
-        						<a href="#"><i class="fa fa-reply" aria-hidden="true"></i> 362</a>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4">
-        				<div class="l_news_item">
-        					<a class="date" href="#">10 April, 2018</a>
-        					<a href="#"><h4>Benjamin Franklin Method Of Habit Formation</h4></a>
-        					<p>There are many kinds of narratives and organizing principles. Science is driven by evidence gathered in experiments, and by the falsification of extant theories and their </p>
-        					<div class="post_view">
-        						<a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 4.5k Views</a>
-        						<a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> 07</a>
-        						<a href="#"><i class="fa fa-reply" aria-hidden="true"></i> 362</a>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4">
-        				<div class="l_news_item">
-        					<a class="date" href="#">10 April, 2018</a>
-        					<a href="#"><h4>Benjamin Franklin Method Of Habit Formation</h4></a>
-        					<p>There are many kinds of narratives and organizing principles. Science is driven by evidence gathered in experiments, and by the falsification of extant theories and their </p>
-        					<div class="post_view">
-        						<a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 4.5k Views</a>
-        						<a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> 07</a>
-        						<a href="#"><i class="fa fa-reply" aria-hidden="true"></i> 362</a>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Latest News Area =================-->
         
         <!--================ start footer Area  =================-->	
 		<% include includes/footer-area.ejs %>
@@ -194,7 +191,7 @@
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="/js/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="/js/popper.js"></script>
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/stellar.js"></script>
@@ -208,6 +205,14 @@
         <script src="/vendors/counter-up/jquery.counterup.js"></script>
         <script src="/js/mail-script.js"></script>
         <script src="/vendors/popup/jquery.magnific-popup.min.js"></script>
-        <script src="/js/theme.js"></script>
+		<script src="/js/theme.js"></script>
+		<style>
+		html, body {
+    max-width: 100%;
+  	  overflow-x: hidden;
+	}
+		</style>
+		<% include includes/g-analytics.ejs %>
+		<script src='/js/lazysizes.min.js' async></script>
     </body>
 </html>
